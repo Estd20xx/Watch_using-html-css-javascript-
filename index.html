@@ -1,0 +1,78 @@
+<!-- ----This is the watch made ny sushant khadka from simple html css and javascript------ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -------------Title of the webpage------------------------ -->
+    <title>my_watch</title>
+    <!-- -------------------------------- internal styling for the html content to make it attractive----->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* ---------download different font and use or you can simply use the cdn link from the website------- */
+            /* font-family: 'montserrat', sans-serif; */
+            font-family: cursive;
+            box-sizing: border-box;
+            /* -----------------------------box-sizing helps to manage the padding and the margin in the div---- */
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            font-weight: 900;
+        }
+
+        /* -class is represented by the dot and the id is represented by the #------ */
+        #time {
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 50px;
+            color: #00fff2;
+            font-size: 48px;
+            box-shadow: inset 2px 3px 4px rgba(255, 255, 255, .7), 2px 3px 4px rgba(0, 0, 0, .4);
+        }
+    </style>
+    <!-- ---End of the css internal styling------------------->
+</head>
+
+<body>
+    <!-- ----------------------------------creating the div for the beautiful webpage-------------------
+----- -->
+    <div id="time"></div>
+    <!-- --------------------------------------------------Starting of the javascript part--------------->
+    <script>
+        // ----------------------------------------creating the variable------------------------------------
+        let a;
+        let hours;
+        let minutes;
+        let seconds;
+        let time;
+        //--------------------------creating the function in Javascript-------------------
+        setInterval(() => {
+            a = new Date();
+            hours = a.getHours();
+            minutes = a.getMinutes();
+            seconds = a.getSeconds();
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            if (hours > 12) {
+                hours = hours - 12;
+                document.getElementById("time").innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + 'PM';
+
+            } else if (hours == 24) {
+                hours = 0;
+                document.getElementById("time").innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + 'AM';
+            } else {
+                document.getElementById("time").innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + 'AM';
+            }
+        }, 1);
+    </script>
+</body>
+</html>
