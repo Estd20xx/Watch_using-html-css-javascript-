@@ -62,9 +62,11 @@
             minutes = a.getMinutes();
             seconds = a.getSeconds();
             time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+
             if (hours > 12) {
                 hours = hours - 12;
                 document.getElementById("time").innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + 'PM';
+
 
             } else if (hours == 24) {
                 hours = 0;
