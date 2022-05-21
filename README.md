@@ -1,12 +1,4 @@
 # Watch_using-html-css-javascript-
-
- Instagram : sushant.exe_
- 
- Linkedin : sushant-khadka5
- 
- Twitter : sushant-rmp
- 
- Tiktok : sushant.deb
  
  ## Check The Demo
  Link : https://estd20xx.github.io/Watch_using-html-css-javascript-/
