@@ -9,7 +9,7 @@
  Tiktok : sushant.deb
  
  ## Check The Demo
- Link : https://sushantkhadka20xx.github.io/Watch_using-html-css-javascript-/
+ Link : https://estd20xx.github.io/Watch_using-html-css-javascript-/
  
  # -------------------------EXAMPLE----------------------------
  
